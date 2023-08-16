@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hello World!</title>
+	<link rel="stylesheet" href="../Css/style2.css" />
+</head>
+
+<body>
+	<header>
+		<h1> JAVASCRIPT</h1>
+	</header>
+
+	<nav>
+		<H2><a title="home" href="../Cours/index.html">MENU</a></H2>
+		<UL>
+			<li> <a title="LE HTML" href="HTML.html">Le HTML 5</a> </li>
+			<li> <a title="Page Css" href="css.html">Le CSS 3</a> </li>
+			<li> <a title="JavaScript" href="js.html">JavaScript</a></li>
+			<li> <a title="GIT & GITHUB" href="GIT.html">GIT</a></li>
+			<li> <a title="liste de sites utiles" href="Bibliothèque.html">Librairie</a> </li>
+
+		</UL>
+	</nav>
+
+	<!-- <script>
+
+
+		alert('Vous êtes sur le point d\'entré  dans une partie Javascripté du site. Voulez vous continuer?')
+			var pass1 = '123', pass2 = prompt(), result;
+
+			result = pass1 == pass2;
+			alert(result);
+
+			if (pass1 == pass2) {
+				alert("Welcome WebMaster");
+			}
+
+			else {
+				document.location.href = "test.html"
+
+			}
+
+	</script> -->
+	<section>
+		<article>
+			<h1> Résumé</h1>
+			<a href="#intro">Introduction</a> <br />
+			<a href="#code">Le code</a><br />
+			<a href="#variables">Les variables</a><br />
+			<a href="#const">Les constantes</a><br />
+			<a href="#obj">Les objets </a><br />
+			<a href="#tables">Les tableaux ou array </a><br />
+			<a href="#conds">Les conditions</a><br />
+			<a href="#boucles">Les boucles </a><br />
+			<a href="#fonction">Les fonctions </a><br />
+			<a href="#events">Les évenements </a><br />
+		</article>
+
+
+		<h1>Le JavaScript</h1>
+		<article>
+			<h2 id="intro"> Introduction</h2>
+			<p> Le JavaScript est un langage de programmation interprété, c'est-à-dire qu'il a besoin d'un interpréteur
+				pour pouvoir être exécuté.<br>
+				Le JavaScript est utilisé majoritairement au sein des pages Web mais son utilisation en guise de serveur
+				ou d'application commence à se répandre.<br>
+				Tout comme le HTML, le JavaScript est généralement exécuté par le navigateur de l'internaute : on parle
+				d'un comportement client-side, par opposition au server-side lorsque le code est exécuté par le
+				serveur.<br>
+
+				Le JavaScript est standardisé par l'ECMA International sous le nom d'ECMAScript qui constitue la
+				référence du langage.<bR>
+				La dernière version standardisée du JavaScript est basée sur l'ECMAScript 5, sorti en 2009. Mais sa
+				nouvelle version, ECMAScript 6, prend du terrain.</p>
+		</article>
+
+
+
+
+		<article>
+			<h2 id="code"> Le code </h2>
+			<p>Un code JavaScript bien présenté est plus lisible et plus facilement modifiable.<br>
+				Les instructions doivent êtres séparées par un point-virgule.<br>
+				Il est possible d'inclure des commentaires au moyen des caractères //, /* et */.<br>
+				Les codes JavaScript se placent dans une balise "<. script>".<br>
+					Il est possible d'inclure un fichier JavaScript grâce à l'attribut "src" de la balise <.script>.
+			</p>
+		</article>
+
+
+
+
+		<article>
+			<h2 id="variables"> Les Variables</h2>
+			<p> Une variable est un moyen pour stocker une valeur. </p>
+			<p> On utilise les mots clés <span class="important">var </span>ou <span class="important">let</span> pour
+				déclarer une variable, et on utilise=pour affecter une valeur à la
+				variable.</p>
+			<p> Les variables sont typées dynamiquement, ce qui veut dire que l'on n'a pas besoin de spécifier le type
+				de contenu que la variable va contenir.</p>
+			<p> Grâce à différents opérateurs, on peut faire des opérations entre les variables. ( "+", "-", "*", "/",
+				"%") <a title="opé de comp" href="../img/Operateurs2comparaison.png" target="_blank" a>voir ici</a>
+			<p> L'opérateur "+"" permet de concaténer des chaînes de caractères, c'est-à-dire de les mettre bout à bout.
+			</p>
+			<p> La fonction "prompt()" permet d'interagir avec l'utilisateur. </p>
+			<p> Une variable est definie par: son nom, sa valeur et son type.</p>
+		</article>
+
+
+
+		<article>
+			<h2 id="const"> Les constantes</h2>
+			<p> Une constante est une genre de variable mais contrairement à cette derniere, sa valeur de change jamais
+				à partir du moment ou elle est initialisée. </p>
+			<p>Pour une donnée fixe, on utilise donc une constante.</p>
+		</article>
+
+
+
+		<article>
+			<h2 id="obj">Les objets</h2>
+			<p>Les objets peuvent contenir autant d'information que l'on souhaite, de type différents dans une seule
+				variable. Un objet est donc de <span class="important">type complexe</span> car il contient plusieurs
+				valeur qui peuvent etre de n'importe quel type. </p>
+			<p>Pour savoir à quoi correspondent les valeurs à l'intérieur d'un objet, on les associes à des clefs.<span
+					class="important"> La clef est une chaine de caractère qui explique la valeur correspondante; nom ,
+					mail age, etc</span> L'objet finale sera donc une série de "paire" correspondantes </p>
+			<p> Pour facilité la création d'objet nous dispons d'un outil qui s'appelle "les classes". Ce sont des plans
+				qui permettent </p>
+
+		</article>
+
+
+
+
+
+		<article>
+			<h2 id="tables">Les tableaux ( ou ARRAY)</h2>
+			<p>Les tableaux ou Array permet de créer une liste de valeur ou d'objet. c'est une liste ordonnée. donc
+				chaque élément a un index. Dans cet matrice on compte à partir de 0.</p>
+			<h3 class="important_1">Comment utiliser un Array</h3>
+
+			<h4>Déclaration d'un tableau (2 façons de faire)</h4>
+			<p> var monTableau2 = new Array();</p>
+
+			<h4>Affecter une valeur à une case du tableau</h4>
+			<p>monTableau[0] = "Pomme"; // <span class="important3"> affectation à la 1ère case en position 0</span><br>
+				monTableau[1] = "Poire";</p>
+
+			<h4>Afficher le contenu d'un tableau</h4>
+			<p>console.table(monTableau);<br>
+				console.log(monTableau[0]); // <span class="important3">affiche Pomme</span><br>
+				console.log(monTableau[1]); // <span class="important3">affiche Poire</span></p>
+
+			<h4>Déclarer et affecter en même temps un tableau numérique</h4>
+			<p>var legumes = ["Carotte", "Haricot", "Poivron"];<br>
+				var legumes2 = new Array("Carotte", "Haricot", "Poivron");</p>
+
+			<h4>Réaffecter une valeur à une case d'un tableau</h4>
+			<p>console.log(legumes[2]);<br>
+				legumes[2] = "Epinard";<br>
+				console.log(legumes[2]);</p>
+
+			<h4>Récupérer la taille du tableau</h4>
+			<p>console.log(legumes.length);<br>
+
+			<h4>Ajouter un élément au tableau</h4>
+			<p>legumes.push("Courgette"); // <span class="important3">ajoute 1 case contenant courgette</span><br>
+				legumes.push("Aubergine", "Tomate", "Potiron");
+			</p>
+			<h4>Retier un element du tableau</h4>
+			<p>La méthode pop() va nous permettre de retirer le dernier élément d'un tableau<br>
+				legumes.pop(); //<span class="important3"> retire le Potiron</span></p>
+			<h4>Retier le 1er element du tableau</h4>
+			<p>tableau.shift();<br>
+				legumes.shift(); // <span class="important3">retire la Carotte</span></p>
+			<h4>Retirer un ou plusieurs éléments d'un tableau à partir d'un position donnée</h4>
+			<p>// tableau.splice(positionDemarrage, nbASupprimer)<br>
+				legumes.splice(1, 2); //<span class="important3"> supprime Epinard et Courgette</span></p>
+			<h4>Ajouter des éléments à une position donnée</h4>
+			<p>let concombre = "Concombre";<br>
+				legumes.splice(1, 0, concombre);</p>
+
+			<h4>Tableaux associatifs d'objet anonyme</h4>
+			<p>var personne = {<br>
+				<span class="marge"></span> nom: "Wayne",<br>
+				<span class="marge"></span> prenom: "Bruce",<br>
+				<span class="marge"></span> age: 35<br>
+				};<br>
+				<br>
+				console.log(personne.prenom);<br>
+				console.log(personne["nom"]);<br>
+			</p>
+
+			<h4>Tableaux à deux dimensions</h4>
+			<p>var tabLegumes = ["Carotte", "Poivron", "Navet"];<br>
+				var tabFruits = new Array("Banane", "Pomme", "Kiwi");</p>
+			<p> A partir de ces deux tableaux nous allons créer un tableau à 2 dimensions</p>
+			<p>var primeur = new Array(tabLegumes, tabFruits);</p>
+			<p>console.table(primeur);<br>
+				<span class="important3">// Afficher le legume Poivron</span><br>
+				console.log(primeur[0][1]);<br>
+				<span class="important3">//Afficher le fruit Kiwi</span><br>
+				console.log(primeur[1][2]);</p>
+
+			<h4>Tableaux à 2 dimensions avec un dimension numérique et une dimension associative
+			</h4>
+			<p>var zoo = [<br>
+				{<br>
+				<span class="marge"></span> pseudo: "Covid",<br>
+				<span class="marge"></span> espece: "Pangolin",<br>
+				<span class="marge"></span> continent: "Afrique"<br>
+				},<br>
+				{<br>
+				<span class="marge"></span> pseudo: "Simba",<br>
+				<span class="marge"></span> espece: "Lion",<br>
+				<span class="marge"></span> continent: "Afrique"<br>
+				}<br>
+				];</p>
+			<p><span class="important3">Afficher dans la console le pseudo des deux animaux;</span><br>
+				console.log("Nos amis " + zoo[0].pseudo + " et " + zoo[1]["pseudo"]);
+
+			</p>
+
+		</article>
+
+
+
+
+
+
+
+
+
+		<article>
+			<h2 id="conds"> Les conditions </h2>
+			<p>Une condition retourne une valeur booléenne :"true" ou "false". </p>
+			<p>De nombreux opérateurs existent afin de tester des conditions et ils peuvent être combinés entre eux.</p>
+			<p>La condition "if else" est la plus utilisée et permet de combiner les conditions.</p>
+			<p>Quand il s'agit de tester une égalité entre une multitude de valeur, la condition "switch" est
+				préférable.</p>
+			<p>Les ternaires sont un moyen concis d'écrire des conditions "if else", et ont l'avantage de retourner une
+				valeur.</p>
+			<h3> Opérateurs de comparaison</h3>
+			<p><img src="../img/Operateurs2comparaison.png" alt="Operateurs de comparaison" /></p>
+
+			<p>Exemple <br>
+
+				1 == 1 --> vrai <br>
+				"1" == 1 --> vrai<br>
+				1 != 2 --> vrai<br>
+				1 != "1" --> faux<br>
+				3 === 3 --> vrai<br>
+				3 !== "3" --> vrai<br>
+				3 !== 3 --> faux<br>
+				4 !== 3 --> vrai<br>
+				3 === "3" --> faux</p>
+			<h3>Opérateur logiques</h3>
+			<p><img src="../img/Operateurslogiques.png" /> </p>
+
+			<h3 class="important-0">La condition "si/sinon" : <span class="important">if/else</span></h3>
+			<p>if (myBoolean) {<br>
+				<span class="marge"></span><span class="important3">// réaction à la valeur vraie de
+					myBoolean</span><br>
+				} else {<br>
+				<span class="marge"></span><span class="important3">// réaction à la valeur faux de myBoolean</span><br>
+				}
+
+			</p>
+
+
+		</article>
+
+
+
+
+
+
+
+
+
+
+
+		<article>
+			<h2 id="boucles">Les boucles</h2>
+			<h3 class="important-0">La boucle "Tant que " : <span class="important">While</span></h3>
+			<p>var i = 1; <br>
+				while (i <=10){<br>
+					<span class="marge"></span>console.log("Instructions de la boucle while éxécutées " + i + "
+					fois");<br>
+					<span class="marge"></span><span class="important3">// Attention à bien incrémenter la valeur de
+						i</span><br>
+					<span class="marge"></span> i++;<br>
+					}</p>
+			<h3 class="important-0">La boucle "Faire...tant que" : <span class="important">do...while</span></h3>
+			<p>do {<br>
+				<span class="marge"></span>console.log("Instructions de la boucle do...while éxécutées " + i + "
+				fois");<br>
+				<span class="marge"></span><span class="important3">// Attention à bien incrémenter la valeur de
+					i</span><br>
+				<span class="marge"></span>i++;<br>
+				} while (i <= 10);</p>
+					<h3 class="important-0">La boucle "Pour" : <span class="important">For</span></h3>
+					<p>for (var j = 1; j <= 10; j++) {<br>
+							<span class="marge"></span>console.log("Instructions de la boucle for éxécutées " + j + "
+							fois");<br>
+							}
+					</p>
+					<h3 class="important-0">La boucle "Pour..dans" : <span class="important">For..in</span></h3>
+					<p><span class="important3">Pratique pour parcourir les clés d'un tableau associatif</span><br>
+						var contact = {
+						<span class="marge"></span> nom: "Norris",<br>
+						<span class="marge"></span> prenom: "Chuck",<br>
+						<span class="marge"></span> telephone: "0123456789",<br>
+						<span class="marge"></span> email: "cnorris@wanadoo.fr"<br>
+						};<br>
+						for (var key in contact) {<br>
+						<span class="marge"></span><span class="important3">// console.log(contact.key) pas possible car
+							sinon il va chercher une clé qui s'appelle key</span><br>
+						<span class="marge"></span>console.log(key + " : " + contact[key]);<br>
+						}
+					</p>
+		</article>
+
+
+
+
+
+
+
+
+
+		<article>
+			<h2 id="fonction">Les fonctions</h2>
+			<p><span class="important_1">Une fonction est un bloc de code qui effectue une tâche précise.</span></p>
+			<p>Quand on a besoin d'excuter le code qui s'y trouve on appelle la <span
+					class="important4">fonction</span>. Celle ci a un <span class="important3">nom</span></p>
+			<p>La plupart des fonctions ont besoin de donnée pour etre effectuée.</p>
+			<p>quand on déclare une fonction, on liste les données qu'elle a besoin. cela s'appelle <span
+					class="important2">les paramètres d'une fonction.</span></p>
+			<p> <span class="important4">function</span> <span class="important3">nomDeLaFonction</span>(<span
+					class="important2">paramètre 1, parametre 2</span>){<br>
+				<span class="marge"></span>code<br>
+				}</p>
+			<p>Dans certaines situation, la fonction retourne une valeur, c'est ce qu'on appelle une <span
+					class="important_1">valeur de retour.</span> </p>
+			<p> <span class="important4">function</span> <span class="important3">somme</span>(<span
+					class="important2">nombre1, nombre2</span>){<br>
+				<span class="marge"></span><span class="important_1">return</span> nombre1 + nombre2;<br>
+				}<br>
+				<span class="important4">somme</span>(<span class="important2">3,4</span>); ici, les chiffres sont
+				appelés des <span class="important2">arguments</span></p>
+			<p> Une méthode est une <span class="important4">function</span> associé à un objet. Autrement dit c'est une
+				<span class="important4">function</span> privé, dont le champ d'action est réduit à un objet </p>
+
+			<p>voici une liste de fonctions et méthodes dites "natives" c'est à dire qui sont déjà pgrmé de base dans le
+				JS.</p>
+			<a title="liste de fonction" href="https://waytolearnx.com/2019/09/liste-des-fonctions-javascript.html">
+				liste de fonctions</a>
+
+			<h3> 1- Méthodes de gestion des tableaux – Array</h3>
+			<ol>
+				<li>pop() : Supprime le dernier élément d’un tableau</li>
+				<li>push() : Ajoute un nouvel élément à la fin du tableau</li>
+				<li>sort() : Trie les éléments par ordre alphabétique</li>
+				<li>reverse() : Trier les éléments dans un ordre décroissant</li>
+				<li>shift() : Supprime le premier élément d’un tableau</li>
+				<li>toString() : Convertit des éléments en chaînes de caractères</li>
+				<li>unshift() : Ajoute un nouvel élément au début d’un tableau</li>
+				<li>concat() : Fusionne plusieurs tableaux en un seul</li>
+				<li>join() : Combine les éléments d’un tableau en une seule chaîne de caractères et renvoie la chaîne</li>
+				<li>slice() : Copie une partie d’un tableau dans un nouveau tableau</li>
+				<li>splice() : Est utilisé pour modifier le contenu d’un tableau en supprimant les éléments existants et/ou en ajoutant de nouveaux éléments.</li>
+				<li>valueOf() : Retourne la valeur primitive de l’objet spécifié</li>
+				<li>indexOf() : Retourne le premier index auquel l’élément donné peut être trouvé dans un tableau, ou -1 s’il n’est pas présent dans un tableau.</li>
+				<li>lastIndexOf() : Retourne le dernier index auquel l’élément donné peut être trouvé dans un tableau, ou -1 s’il n’est pas présent dans un tableau.</li>
+			</ol>
+
+			<h3>2- Méthodes pour afficher la sortie des données</h3>
+			<ol>
+				<li>alert() : Affiche la sortie sur une boîte de dialogue du navigateur</li>
+				<li>confirm() : Ouvre une boîte de dialogue oui/non et renvoie true/false en fonction du clic del’utilisateur</li>
+				<li>console.log() : Affiche la sortie sur la console du navigateur, utile pour le débogage</li>
+				<li>document.write() : Écrit directement dans le document HTML</li>
+			</ol>
+
+			<h3>3- Fonctions globales</h3>
+
+			<ol>
+				<li>isNaN() : Détermine si une valeur est NaN((Not a Number) ou non</li>
+				<li>Number() : Convertit l’argument en nombre représentant la valeur de l’objet. Si la valeur ne peut pas être convertie en nombre, NaN est renvoyé.</li>
+				<li>eval() : Évalue le code JavaScript représenté sous forme de chaîne</li>
+				<li>encodeURI() : Encode un URI en UTF-8</li>
+				<li>decodeURI() : Décode un URI créé par encodeURI() ou d’autres fonctions</li>
+				<li>decodeURIComponent() : Décode un composant URI</li>
+				<li>parseInt() : convertit une chaîne de caractères en entier</li>
+				<li>parseFloat() : convertit une chaîne de caractères en nombre à virgule flottante</li>
+				<li>isFinite() : Détermine si la valeur transmise est un nombre fini</li>
+			</ol>
+
+
+			<h3>4- Méthodes de l’objet String</h3>
+			<ol>
+				<li>match() : Récupère les correspondances d’une chaîne par rapport à un motif de recherche</li>
+				<li>search() : Recherche dans une chaîne de caractères la valeur spécifiée et renvoie la position de la correspondance.</li>
+				<li>toLowerCase() : Convertit une chaîne de caractères en minuscules</li>
+				<li>toUpperCase() : Convertit une chaîne de caractères en majuscules</li>
+				<li>indexOf() : Fournit la position du première occurrence d’un texte spécifié dans une chaîne</li>
+				<li>charAt() : Retourne le caractère à la position spécifiée dans la chaîne</li>
+				<li>concat() : Concatène deux ou plusieurs chaînes en une seule</li>
+				<li>charCodeAt() : Retourne la valeur unicode d’un caractère à la position spécifiée</li>
+				<li>indexOf() : Fournit la position du première occurrence d’un texte spécifié dans une chaîne</li>
+				<li>lastIndexOf() : Fournit la position du dernière occurrence d’un texte spécifié dans une chaîne</li>
+				<li>slice() : Extrait une partie d’une chaîne et la renvoie sous forme de nouvelle chaîne</li>
+				<li>split() : Découpe une chaîne de caractère en un tableau de sous-chaînes en fonction d’un séparateur</li>
+				<li>substr() : Comme slice() mais extrait une sous-chaîne en fonction du nombre de caractères spécifié</li>
+				<li>substring() : Comme slice() mais ne peut accepter les index négatifs</li>
+				<li>replace() : Recherche et remplace un texte spécifique dans une chaîne</li>
+			</ol>
+
+			<h3>5- Méthodes mathématiques</h3>
+
+			<ol>
+				<li>random() : Retourne un nombre aléatoire compris entre 0 et 1</li>
+				<li>round(x) : Arrondie la valeur de x à son entier le plus proche</li>
+				<li>pow(x, y) : X à la puissance de y</li>
+				<li>exp(x) : Exponentielle de x</li>
+				<li>log(x) : Le logarithme naturel (base E) de x</li>
+				<li>max(x, y, z, …, n) : Retourne le maximum</li>
+				<li>min(x, y, z, …, n) : Retourne le minimum</li>
+				<li>abs(x) : Retourne la valeur absolue de x</li>
+				<li>sqrt(x) : La racine carrée de x</li>
+				<li>cos(x) : Le cosinus de x</li>
+				<li>sin(x) : Le sinus de x</li>
+				<li>tan(x) : La tangente de x</li>
+				<li>ceil(x) : Arrondie la valeur de x à l’entier le plus proche</li>
+			</ol>
+
+			<h3>6- Méthodes pour la manipulation des dates/heures en Javascript</h3>
+			<ol>
+				<li>getDate() : Récupère le jour du mois sous forme de nombre (1-31)</li>
+				<li>getDay() : Le jour de la semaine sous forme de nombre (0-6)</li>
+				<li>getFullYear() : Année sous la forme d’un nombre à quatre chiffres (aaaa)</li>
+				<li>getHours() : Retourne l’heure (0-23)</li>
+				<li>getMilliseconds() : Retourne les millisecondes (0-999)</li>
+				<li>getMinutes() : Retourne les minutes (0-59)</li>
+				<li>getMonth() : Retourne le mois sous forme de nombre (0-11)</li>
+				<li>getSeconds() : Récupère les secondes (0-59)</li>
+				<li>getTime() : Récupère les millisecondes depuis le 1er janvier 1970</li>
+				<li>getUTCDate() : Le jour du mois à la date spécifiée selon l’heure universelle.</li>
+				<li>setDate() – Définit le jour en tant que nombre (1-31)</li>
+				<li>setFullYear() – Définit l’année</li>
+				<li>setHours() – Définit l’heure (0-23)</li>
+				<li>setMilliseconds() – Définit les millisecondes (0 à 999)</li>
+				<li>setMinutes() – Définit les minutes (0-59)</li>
+				<li>setMonth() – Définit le mois (0-11)</li>
+				<li>setSeconds() – Définit les secondes (0-59)</li>
+				<li>setTime() – Fixe l’heure (en millisecondes depuis le 1er janvier 1970)</li>
+				<li>setUTCDate() – Définit le jour du mois pour une date spécifiée en fonction du temps universel</li>
+			</ol>
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+		</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<article>
+			<h2 id="events">Les Evenements</h2>
+			<p>Le vrai dynamisme d'une page web est de pouvoir interéagir a chaque action de l'utilisateur en lui
+				envoyant le contenu demandé.</p>
+			<p> Cela passe par les <span class="important_1">évenements</span></p>
+			<p>En Js, les <span class="important_1">évenements</span> sont représenté par un <span
+					class="important3">nom</span> et par une <span class="important4">fonction</span> appellée <span
+					class="important4">callback</span></p>
+			<p>Cette derniere sera appellée a chaque fois que l'action que l'on desire suivre est executée.</p>
+			<p>Pour pouvoir réagir correctement à des <span class="important_1">évenements</span>, il va falloir pouvoir
+				les écouter: la <span class="important4">fonction</span> "<span
+					class="important5">addEventListener</span>" est faites pour ça.</p>
+			<p><span class="important5">addEventListener</span> prend le <span class="important3">nom</span> de l'<span
+					class="important_1">évenement</span> à écouter et la <span class="important4">fonction</span> à
+				appeler dés que l'<span class="important_1">évenements</span> est exécuté </p>
+			<p><span class="important5">addEventListener</span>(<<span class="important_1">events</span>>, <<span
+						class="important4">callback</span>>) </p>
+
+
+			<p>Voici une liste d'évenement
+			<ul>
+				<li>OnClick::quand click souris</li>
+				<li>OnDblClick:quand double click souris</li>
+				<li>OnMouseOver:quand la souris passe sur ...</li>
+				<li>OnMouseOut:quand la souris part de...</li>
+				<li>OnLoad:quand quand la page charge l'élément</li>
+				<li>OnKeyUp:quand la touche du clavier est appuyée</li>
+				<li>OnKeyDown:quand la touche du clavier est relachée</li>
+				<li>OnFocus:quand un champs de saisie est activé</li>
+				<li>OnBlur:quand on quitte un champs de saisie</li>
+				<li>OnMouseMove:quand la souris bouge</li>
+				<li>OnChange:quand si une valeur change</li>
+				<li>OnRsize:quand la dimension de la fenetre de navigation est modifiée</li>
+				<li>OnSubmit:quand un le boutton de type submit est activé.</li>
+			</ul>
+			</p>
+
+
+
+		</article>
+
+
+
+
+
+
+
+
+
+
+
+
+	</section>
+
+
+
+	<p> Le cours continue ici:<a title="Cours" class="Cours"
+			href="https://openclassrooms.com/fr/courses/1916641-dynamisez-vos-sites-web-avec-javascript/1917384-les-conditions#r-1923340">cours</a>
+	</p>
+	<section>
+		<h1>Information en vrac</h1>
+		<h2> note de cours de Ihab</h2>
+		<p>GetAttribut : recupere les attributs</p>
+		<p>setAttribut</p>
+	</section>
+
+
+
+
+	<footer>
+		<h5>Contact ( work in progress )</h5>
+	</footer>
+</body>
+
+</html>

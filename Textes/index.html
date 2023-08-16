@@ -1,0 +1,256 @@
+<!-- Le doctype permet de savoir quelle version de HTML nous utilisons dans la page-->
+<!DOCTYPE html>
+<html lang="fr">
+
+</html>
+<!--L'attribut lang permet de spécifier la langue du document -->
+
+<head>
+    <!-- En tête de la page-->
+    <!--Chargement d'une police Google Fonts-->
+    <!-- <link href = "https://fonts.googleapis.com/css2? family = Courier + Prime: ital @ 1 & display = swap" rel = "stylesheet"> -->
+    <!-- Chargement de Fontell(police d'icones)-->
+    <link rel="stylesheet" href="Css/fontello.css">
+
+    <!--Chargement de feuille de Style-->
+    <link rel="stylesheet" href="../Css/MainRead.css">
+
+</head>
+
+
+<body>
+    <header>
+        <div class="logoh">  <a title="Home" href="../index.html"> <img src="../img/logoGWvqs.png" alt="" /> </a>
+            
+            <!-- Conteneur de menu de navigation -->
+            <nav>
+                <ul>
+                    <li> 
+                        <a class="btn" href="">Games</a>
+                    </li>
+                    <li> 
+                        <a class="btn" href="">Lectures</a>
+                    </li>
+                    <li> 
+                        <a class="btn" href="">Navigateur</a>
+                    </li>
+                    <li> 
+                        <a class="btn" href="">Cours</a>
+                    </li>
+                  
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- La balise main sert de conteneur au contenu prncipal de la page une seule balise main par page-->
+    <main>
+
+        <div id="presentation">
+            <video src="../vid/crystal-oasis-guild-wars-1guild-wars-2-extended.mp4" controls autoplay  ></video>
+            <p class="welcome">Bienvenu dans la formation .net</p>
+            <p class="welcome">Du HTML au C# on a peur de rien ! ahah</p>
+            <a href="page2.html" class="btn">En savoir plus...</a>
+        </div>
+        <div id="service">
+            <h2>Nos Services</h2>
+            <div class="row">
+                <div class="col"><i class="icon-game"></i>
+                    <h3>Game </h3>
+                    <hr/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptate tempora harum. Sequi quidem praesentium officia rem, corrupti itaque assumenda suscipit obcaecati iure deleniti vero expedita nihil deserunt! Molestiae, laboriosam.</p>
+                </div>
+                <div class="col"><i class="icon-read"></i>
+                    <h3>Read</h3>
+                    <hr/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consequatur saepe sit laboriosam harum modi illo officiis error pariatur animi? Et iste praesentium impedit voluptatibus deleniti? Est consectetur quam numquam.</p>
+                </div>
+                <div class="col"><i class="icon-cours"></i>
+                    <h3>Cours</h3>
+                    <hr/>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, alias sit. Laborum optio dolorem, mollitia ut ad delectus porro et. Numquam beatae assumenda sint, voluptates fuga deleniti eum quaerat magni?</p>
+            </div>
+        </div>
+        </div>
+        <h1> Hello world !</h1>
+
+
+
+        <div><a href="https://google.Fr" target="_blank"> Google</a></div>
+        <!-- l'attribut _blank permet d'ouvrir le lien dans un nouvel onglet-->
+
+
+
+
+        <div><a href="page2.html">Page 2 </a></div>
+
+        <!-- liste non ordonnée -->
+        <div>
+            <ul>
+                <li>Element 1</li>
+                <li>Element 2</li>
+                <li>
+                    Element 3
+                <li>sous element 1</li>
+                <li>sous element 1</li>
+                <li>sous element 1</li>
+
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- Liste ordonnée-->
+
+        <div>
+            <ol>
+                <li>Element 1</li>
+                <li>Element 2</li>
+            </ol>
+        </div>
+
+       
+
+        <!-- Les floatants ! -->
+        <div class="items">
+            <figure class="item"><img src="img/Proph.jpg"> </figure>
+            <figure class="item"><img src="img/Faction.jpg"> </figure>
+            <figure class="item"><img src="img/Nf.jpg"> </figure>
+
+            <!-- On positionne le clearfix apres le dernier élément flottant et avant la fermeture du contenant ! -->
+            <div class="clearfix"></div>
+        </div>
+
+
+
+        <!-- Les tableaux !!!!!!-->
+        <div>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Fruits</th>
+                        <th>Poids</th>
+                        <th>Prix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pomme</td>
+                        <td>1kg</td>
+                        <td>1€99</td>
+                    </tr>
+
+
+                    <tr>
+                        <td rowspan="2">Kiwi</td> <!-- fusion d'une colonne sur plusieurs lignes-->
+                        <td colspan="2">0,30€ la piece</td> <!-- Fusion d'une colonne sur plusieurs colonnes-->
+
+                    </tr>
+
+                    <tr>
+                        <td>1kg</td>
+                        <td>2€</td>
+                    </tr>
+
+
+
+                </tbody>
+            </table>
+        </div>
+        <!--FORMULAIRES-->
+        <!-- 
+    balises FORM.
+    2 attributs action et method ( pour le back en C#/ php )
+action = page qui va traiter le formulaire
+method = 2 méthodes: get ou post
+                                get = données dans l'url(limité à 250 caractères) 
+                                post= données dans la requete ( meilleur en terme de traitement de données)
+input type="text" = sert à pouvoir taper du texte, c'est une balise autofermante
+label sert à ecrire à coté du champs du formulaire.
+pour lier un label à un imput il faut ajouter un id sur l'inpute et un attribut sur le label.
+Les deux attributs doivent avoir la meme valeur pour faire la liaison.
+
+    -->
+        <form action="traitementDesDonnees.php" method="post">
+            <div>
+                <label for="imputFirstname" placehold text="Votre prenom">Votre prenom*:</label>
+                <input type="text" id="imputFirstname" name="firstname" required />
+                <!-- required= champs obligatoire-->
+            </div>
+            <div>
+                <label for="inputPassword">Votre mot de passe:</label>
+                <input type="password" id="inputPassword" name="Password" />
+            </div>
+
+            <div>
+                <!-- Zone de texte multiligne
+    TEXTAREA
+rows= ligne
+cols= moyenne de caracteres par ligne.-->
+                <label for="textareaMessage">Votre message</label>
+                <textarea id="textareaMessage" name="message" rows="4" cols="40"></textarea>
+            </div>
+
+            <!-- Liste déroulante
+balise select= entoure toute la liste déroulante-->
+            <div>
+                <label for="">Votre Pays:</label>
+                <select id="selectcountry" name="country">
+                    <option value="BE">Belgique</option>
+                    <option value="FR" selected>France</option><!-- attribut selected permet de préselectionné-->
+                    <option value="ES">Espagne</option>
+                </select>
+            </div>
+
+
+            <div>
+                <!-- case à cocher -->
+                <p> quels sont vos genres de musique préférés?</p>
+                <input type="checkbox" id="checkboxRock" name="rock" />
+                <label for="checkboxRock">Rock</label>
+
+                <input type="checkbox" id="checkboxPop" name="pop" />
+                <label for="checkboxPop">Pop</label>
+                <!-- l'attribut checked permet de cocher par défaut une case à cocher.-->
+                <input type="checkbox" id="checkboxRap" name="rap" checked />
+                <label for="checkboxRap">Rap</label>
+            </div>
+
+            <div>
+                <!-- Boutton radio-->
+                <p>Votre sexe:</p>
+                <input type="radio" id="radiofemme" name="sexe" />
+                <label for="radiofemme">Féminin</label>
+                <!-- mettre le meme name fait qu'il n'y en a qu'un qui peut etre selectionné à la fois -->
+                <input type="radio" id="radioHomme" name="sexe" />
+                <label for="radioHomme">Masculin</label>
+            </div>
+            <!-- Bouton de soumission du formulaire
+    ça envoit les envoies les informations du formulaire sur la page spécifié dans l'attriut action de la balise form
+-->
+
+            <input type="submit" value="Valider" />
+
+
+
+        </form>
+
+
+    </main>
+</body>
+
+
+</html>
+
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    </body>
+
+    </HTML>

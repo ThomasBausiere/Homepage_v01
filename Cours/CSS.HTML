@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../Css/style2.css" />
+	<title> CSS </title>
+</head>
+
+<Body>
+	<header>
+		<h1>LE CSS</h1>
+	</header>
+
+
+
+
+	<nav>
+		<H2><a title="home" href="../Cours/index.html">MENU</a></H2>
+		<UL>
+			<li> <a title="LE HTML" href="HTML.html">Le HTML 5</a> </li>
+			<li> <a title="Page Css" href="css.html">Le CSS 3</a> </li>
+			<li> <a title="JavaScript" href="js.html">JavaScript</a></li>
+			<li> <a title="GIT & GITHUB" href="GIT.html">GIT</a></li>
+			<li> <a title="liste de sites utiles" href="Bibliothèque.html">Librairie</a> </li>
+
+		</UL>
+	</nav>>
+
+	<!-- <a title="lien externe vers wikipedia"
+		href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1608902-memento-des-proprietes-css">Liste
+		des propriétés CSS</a></br> -->
+	<section>
+
+		<article>
+			<h1> Résumé</h1>
+			<a href="#proprietés">Les propriétés</a> <br />
+			<a href="#ClassIds">Classes et ids</a><br />
+			<a href="#Flexbox">Flexbox</a><br />
+			<a href="#Bootstrap">Bootstrap</a><br />
+			<a href="#Sass">Le Sass</a><br />
+
+		</article>
+		<h1> Le CSS</h1>
+		<p></p>
+		</p>Le langage Css vient completer celui du HTML. Là où ce dernier permet d'afficher, le CSS lui vient définir
+		"comment" l'afficher. </br>
+		Il faut être vigilant sur la compatibilité des navigateurs avec certaines fonctionnalités récentes de CSS3.
+		Quand un navigateur ne connaît pas une instruction de mise en forme, il l'ignore simplement.</br>
+		On peut écrire le code CSS à plusieurs endroits différents, le plus conseillé étant de créer un fichier séparé
+		portant l'extension ".css " (exemple :style.css). </br>
+		En CSS, on sélectionne les portions de la page HTML que l'on souhaite modifier et on change leur présentation
+		avec des propriétés CSS.</br>
+		sources : openclassrooms.com</p>
+
+		<article>
+
+			<h2 id="proprietés"> Propriétés</h2>
+
+			<p>Les propriétés sont ce que les balises sont au HTML, l'essence même du language.</p>
+			<p>Il convient dans un premier temps de definir l'objet HTML qui va être affectée par la propriéte CSS,
+				celle ci va ensuite venir lui donner une caracteristique.</p>
+			<p>Exemple;</p>
+			<p>body{<br>
+				background:red;<br>
+				}</p>
+			<p>Dans cette exemple la couleur rouge est donnée au fond du body.</p>
+
+			<p>Voici une liste de propriétés Css: <a title="Liste prop. Css3"
+					href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1608902-memento-des-proprietes-css">Ici</a>
+			</p>
+			<p>On remercie Mathieu Nebra</p>
+		</article>
+		<article>
+			<h2 id="ClassIds">Classes et Ids</h2>
+
+			<p> Il est important de savoir que les propriétés peuvent etre attribuée aux classes et au ids définis dans
+				le code HTML.</p>
+			<p>Cette information est très importante car elle ouvre des portes sur l'ensemble des mécaniques CSS.
+				notamment avec FlexBox, bootstrap et SASS ( ou SCSS)</p>
+
+		</article>
+
+		<article>
+			<h2 id="Flexbox">FleXbox</h2>
+			<h4>FlexBox marque un renouveau de la mise en page en CSS.</h4>
+			<p>En effet, avant l'arrivé de FlexBox, pour déplacer des élèments en Css, il fallait essayer de faire
+				concorder de faire voler les elements dans la page a la maniere d'un télékinésiste ( c'est un peu abusé
+				mais y'a du vrai là dedans...)</p>
+			<p>Maintenant nous alons pouvoir nous organiser beaucoup plus facilement.</p>
+
+			<h4>Vocabulaire important pour maitriser FlexBox.</h4>
+			<p>Le conteneur: <span class="important1"> Flex Container.</span></p>
+			<p>Les élèments contenus:<span class="important2"> Flex Items.</span></p>
+			<h4>A savoir</h4>
+			<p>A savoir: Les propriétés pour <span class="important1"> Flex Container</span> sont différentes pour les
+				<span class="important2"> Flex Items.</span> </p>
+			<p>Les propriétés pour <span class="important1"> Flex Container</span> vont s'appliquer sur <span
+					class="important2"> Flex Items</span> contenur dans ce <span class="important1"> Flex
+					Container.</span> </p>
+			<p>Les propriétés pour les <span class="important2"> Flex Items</span> vont s'appliquer à un ou des <span
+					class="important2"> Flex Items</span></p>
+			<p> Il peut y avoir <span class="important"> des structures imbriquées</span>. </p>
+
+			<h4>Fonctionement.</h4>
+
+			<p>Tout d'abord il faut appliquer une propriété sur le <span class="important1"> Flex Container</span>
+				"display: flex" dans le css. (C'est une manière de dire " Ici, on utilise flexbox")</p>
+			<p> ensuite nous pouvons ajouter les propriétés flex.</p>
+			<ul>
+				<li><span class="important1">Flex-direction</span>: Row(par défaut), row-reverse, column,
+					column-reverse(permet de disposer des blocs d'une certaine direction: ('→' '←' '↓' '↑'))</li>
+				<li><span class="important1">Flex-wrap</span>: Nowrap(par défaut),wrap (permet de revenir ou non à la
+					ligne)</li>
+				<li><span class="important1">Flex-flow</span>: Flex-direction, flew-wrap (permet d'ajouter les deux
+					dernieres propriétés.)</li>
+				<li><span class="important1">Justify-content</span>: Flex-start, flex end, center, space-between,
+					space-around, space-evenly</li>
+				<li><span class="important1">Align-items</span>: Flex-start, flex end, center,stretch, baseline</li>
+				<li><span class="important1">Align-content</span>: Flex-start, flex end, center,stretch, space-between,
+					space-around</li>
+			</ul>
+
+
+			<ul>
+
+				<li><span class="important2">Order</span>: Permet de changer l’ordre d’affichage d’un élément</li>
+				<li><span class="important2">Flex-grow</span>: Permet de changer la taille d’affichage d’un élément en
+					le grossissant</li>
+				<li><span class="important2">Flex-shrink</span>: Permet de changer la taille d’affichage d’un élément en
+					le retrécissant</li>
+				<li><span class="important2">Flex-basis</span>: Permet de definir une taille par défaut</li>
+				<li><span class="important2">Align-self</span>: Permet de changer l'alignement d'un élément en
+					particulier</li>
+			</ul>
+
+
+		</article>
+
+		<article>
+			<h2 id="Bootstrap">Bootstrap</h2>
+			<p>C'est un framework CSS qui permet de créer des sites web responsives de maniere rapide, pratique et
+				gratuite.</p>
+			<p>Bootstrap c'est un framework, c'est une énorme bibliothèque de classe qui peuvent etre mises dans le HTML
+			</p>
+			<p>Pour l'utiliser,il faut le download <a title="télécharger Bootstrap"
+					href="https://getbootstrap.com/docs/4.5/getting-started/introduction/">ici</a></p>
+			<p>Ensuite il faut mettre les fichiers css et js dans le projet du site web concerné </p>
+			<p> Insérer un lien dans le html ('<'link rel="stylesheet href=" css/bootstrap.css), devant la ligne du css
+					pour le lier à votre page.</p>
+
+					<h4>C'est bien beau tout ça, mais c'est à dire?</h4>
+
+					<p> C'est à dire que maintenant, pouvoir gagner du temps sur votre css en utilisant des classes déjà
+						custumiser dans la bibliothèque de Bootstrap. rapide, pratique, efficace.</p>
+					<p>Biensur, il vous reste la possibilité de modifier les classes déjà crée par bootstrap afin que
+						votre site ne ressemble à aucun autre.</p>
+					<p>Bref, il ne vous reste plus qu'à parcourir l'immense bibilothèque de Bootstrap afin de découvrir
+						ce que vous souhaitez utiliser: <a title="Bootstrap library"
+							href="https://getbootstrap.com/docs/4.5/components/alerts/">Ici</a></p>
+
+		</article>
+
+		<article>
+			<h2 id="Sass">SASS</h2>
+			<h4>Qu'est que SASS?</h4>
+			<p>Par définition c'est un préprocesseur CSS</p>
+			<p>-Et?</p>
+			<p>Et ça veut dire qu'il va nous permettre d'écrire du CSS plus simplement et de manière beaucoup plus
+				organisée!</p>
+			<p> -Pourquoi dire "préprocesseur"?</p>
+			<p>On appelle cela comme ça car il y une phase de "compilation" pour transformer le SASS en Css !</p>
+			<p>Il en existe plusieurs comme SASS, les plus connus sont " Less et Stylus. Le plus utilisé reste tout de
+				même SASS avec une utilisation de 66% de part de marché.</p>
+			<h4>SCSS</h4>
+			<p>-Quoi?! Encore un nouveau mot? !</p>
+			<p>C'est tres simple. Sass a deux syntaxes différentes: sass, et scss (notez l'absence de majuscule).La plus
+				récente est la seconde (scss). Elle est la plus évoluée et la plus utilisée. Son point fort est qu'elle
+				ressemble beaucoup au css.</p>
+			<h4>Sass (avec un grand S!)</h4>
+			<p>C'est quatre points clés:
+			<ol>
+				<li>Des variables en Css</li>
+				<li>Des syntaxes imbriquées</li>
+				<li>Des mixins</li>
+				<li>Des boucles et des conditions</li>
+			</ol>
+			</p>
+			<p>Tout ça permet de rajouter des fonctionnalitées supplémentaire au Css et ça, on adore !</p>
+			<h4>1.Les Variables</h4>
+			<p>Comme dans un langage de programation, nous utiliserons des variables.</p>
+			<p>Exemple de variable pratique: les couleurs du site. De cette façon si vous souhaitez changer la couleur
+				en cours de route, il vous suffit de changer la valeur stockée dans la variable.</p>
+			<p>Déclaration de variable: $nom-de-la-variable:valeur;</p>
+			<p>utilisation: color: $nom-de-la-variable;</p>
+
+			<h4>Mise en pratique</h4>
+			<h5>L'emplacement du fichier sass</h5>
+			<p>Dans le dossier du projet, comme pour: le Css/le js/les images/ video, il est conseillé de créer un
+				fichier "sass" dans lequel se trouvera un fichier "style.scss"</p>
+			<h5>La compilation</h5>
+			<p>Pour que le navigateur puisse lire le fichier, il faut le compiler</p>
+			<p>Pour cela il faut installer Node Package Manager <a title="installation nodepackageManager"
+					href="../files/node-v12.19.0-x64.msi">lien direct</a> pensez à cocher l'option du terminal dans vote
+				IDE ce sera plus simple pour la suite.</p>
+			<p>and let the compilation begin!</p>
+			<p>Dans le terminal de votre IDE: "sass source.scss destination.css" (code générique)<br>
+				sass sass/style.scss css/style.css (formule exemple)</p>
+			<h4>2.La Syntaxe Imbriquée</h4>
+			<p>La syntaxe de Sass va permettre de faire de l'imbrication, comme pour le HTML: avec la notion de parent,
+				enfant et voisin.</p>
+			<p>Peuvent également être imbriquées: les pseudos-classes(:hover, :focus(par exemple)) ainsi que les média
+				queries(@media)</p>
+			<h4>Les Mixins</h4>
+			<p>En SASS, les Mixins sont à peut près égale aux fonctions des autres languages de programation.</p>
+			<p>La différence est que les mixins peuvent envoyer plusieurs lignes de Css.</p>
+			<h5>Comment ça fonctionne?</h5>
+			<p>Step 1: déclarer la mixin:</p>
+			<p>Step2: Appeler la mixin</p>
+			<h5>Déclaration de la Mixin</h5>
+			<p>Pour déclarer une mixin, on commence par écrire "@mixin" suivi du nom que vous souhaitez lui donner</p>
+			<p>@mixin text-center { text-align:center;}</p>
+			<p>Comme pour une fonction, il est possible de déterminer les paramètres qui definiront la mixin. </p>
+			<p>@mixin buttou ($color, $bgcolor){<br><span class="marge"></span>color:$color;<br> <span
+					class="marge"></span>background-color:$bgcolor;<br>}<br> [ici les informations sont des variables)
+			</p>
+			<p>enfin, il est possible d'ajouter des paramètres par défaut aux mixins</p>
+			<p>@mixin text-align($align:left){<br>
+				<span class="marge"></span>text-align:$align;<br>}</p>
+			<p>Si la variable $align est changée, cela prendre la dessus sur la valeur par défaut.</p>
+			<h5> Appeler la mixin</h5>
+			<p>Pour appeler la mixin, il suffit d'indiquer "@include" suivi du nom de la mixin.</p>
+
+			<p>Ex: h1{<br><span class="marge"></span>//application de la mixin "text-center"<br>
+				<span class="marge"></span>@include text-center;<br>}</p>
+			<h4>Les boucles</h4>
+			<p>Les boucles permettent de répéter une instruction plusieurs fois par rapport à: </p>
+			<ul>
+				<li>un compteur (for)</li>
+				<li>une condition (while)</li>
+				<li>une liste d'éléments (each)</li>
+			</ul>
+			<h5>La boucle for</h5>
+			<p>"Pour i allant de 1 à 10 faire..."</p>
+			<p>La boucle for se fait par le biais d'une variable qui va détenir la valeur du compteur ( i ) suivit de la
+				valeur du début et la valeur de fin.</p>
+			<p> @for $i from <.début> through <.fin>
+			</p>
+			<p>@ $i from 1through3 { <br>
+				<span class="marge"></span>.margin-#{$i} {<br>
+				<span class="marge"></span><span class="marge"></span> margin: 1rem*$i;<br>
+				<span class="marge"></span>}<br>} </p>
+
+			<p>La syntaxe #{$i} permet d’utiliser la valeur pourl’afficher dans un sélecteur (dans un chaine demanière
+				générale), vous remarquerez que nous n’avons pas besoin de cette syntaxe pour faire des calculs ou
+				appliquer la valeur sur une propriété par exemple.</p>
+			<h5>La boucle while </h5>
+			<p>"tant que i>10 faire...</p>
+			<p>La boucle while se fait par l'intermediaire de l'instruction "@while" suivie d'une condition qui va
+				conditionner le nombre d'itération dans la boucle.</p>
+			<p>@while <.condition>
+			</p>
+			<p>@while $i <=3{<br>
+					<span class="marge"></span>.margin-#{$i}{<br>
+					<span class="marge"></span><span class="marge"></span>margin: 1rem* $i;<br>
+					<span class="marge"></span>}<br><span class="marge"></span>$i:$i+1;<br>}
+			</p>
+			<h5>La boucle each</h5>
+			<p>L'intérêt de la boucle each est de pouvoir parcourir n'importe quelle liste ou collections.</p>
+			<p>L'instruction @each est suivie d'une variable qui va contenir la valeur d'un element de la
+				liste/collection </p>
+			<p>@each $item in 1,2,3</p>
+
+			<p>les listes peuvent s'écrire de plusieurs façons:
+			<ul>
+				<li>1, 2, 3</li>
+				<li>1 2 3</li>
+				<li>(1, 2, 3)</li>
+				<li>(1 2 3)</li>
+			</ul>
+			</p>
+
+			<p>@each $color in red, blue, green {<br><span class="marge"></span>.bg-#{$color}{<br><span
+					class="marge"></span>background-color: $color; <br> <span class="marge"></span>}<br>}</p>
+
+			<p>peut aussi s'écrire:</p>
+			<p>$color in red, blue, green <br><br>@each$color in$colors{<br><span
+					class="marge"></span>.bg-#{$color}{<br><span class="marge"></span><span
+					class="marge"></span>background-color:$color;<br><span class="marge"></span>}<br>}</p>
+
+			<p>Et donc avec des collections il suffit de reprendre la logique d'un tableau des autres languages.</p>
+			<p>Une collection fonctionne avec des associations de clés et de valeurs le tout stocké dans une variable
+			</p>
+
+			<p>$grid:( <br> <span class="marge"></span> columns:12 <br> );</p>
+			<p>Pour récupérer une valeur d’une clé d’une collection vous disposez de la fonction map-get prenant en
+				paramètre la collection et la clé de la valeur souhaitée :</p>
+			<p>$columns: map-get($grid, "columns");</p>
+			<p>On peut ainsi parcourir une collection avec la boucle "each"</p>
+			<p>@each $key, $value in $grid {...}</p>
+			<p>Attention de bien mettre $key, $value car si vous ne mettez qu’une seule variable vous obtiendrez la
+				concaténation de la clé et de la valeur... </p>
+			<p>$text-transform:(<br>
+				<span class="marge"></span> text-uppercase: uppercase,<br>
+				<span class="marge"></span> text-capitalize: capitalize,<br>
+				<span class="marge"></span> text-lowercase: lowercase<br>
+				);<br>
+				@each $classname, $style in $text-tranform {<br>
+				<span class="marge"></span> .#{$classname} {<br>
+				<span class="marge"></span><span class="marge"></span> text-transform: $style;<br>
+				<span class="marge"></span> }<br>
+				}</p>
+
+			<h4>Les conditions</h4>
+			<p>Les conditions en programation et en Sass fonctionent pareil. Il n'y a que la syntaxe qui change.</p>
+			<p>Pour écrire une condition en SASS nous utilisons l’instruction @if suivie de la condition à tester</p>
+			<p>@if $color == blue {<br>
+				<span class="marge"></span>@include btn-blue;<br>
+				}</p>
+
+			<h4>Les fichiers partiels</h4>
+			<p>L'idée des fichiers partiels est de diviser en plusieurs fichiers notre feuille de style.</p>
+			<p>Nous pourrons donc réutiliser certains fichiers d'un projet à un autre.</p>
+			<p>En Css la division de fichier est déconseillée car elle ralentie la page. Mais en Sass, il n'y a aucun problame car les fichiers seront compilés. </p>
+			<h5>Création d'un fichier partiel</h5>
+				<p>le nom du fichier doit etre précédé d'un underscore pour que Sass comprenne qu'il s'agit d'un fichier partiel.</p>
+				<p>par exemple, pour créer un fichier avec mes variables sass à l'interieur, je peux l'appeler "_variables.scss"</p>
+			<h5>Importation</h5>
+			<p>Lors de l'importation il ne faut pas :
+				<ol>
+					<li>mettre l'underscore</li>
+					<li>mettre l'extension .scss</li>
+				</ol></p>
+			<p>Sass comprend qu'il doit aller chercher un fichier pariel meme sans ces informations</p>
+			<p>la syntaxe est la suivante: @import "nomdufichierpartiel";</p>
+
+		</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</section> <a title="cours"
+		href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1606168-decouvrez-le-modele-des-boites">Cours</a>
+
+	<footer>
+		<h5>Contact ( work in progress )</h5>
+	</footer>
+</Body>
+
+</HTML>

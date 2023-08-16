@@ -1,0 +1,295 @@
+<!DOCTYYPE HTML>
+	<HTML>
+
+	<Head>
+		<!-- En-tête de la page -->
+
+		<meta charset="UTF-8" />
+		<title>Notions de base: HTML</title>
+		<link rel="stylesheet" href="../Css/style2.css" />
+	</Head>
+
+	<body>
+		<header>
+			<h1> LE HTML </h1>
+		</header>
+
+
+		<nav>
+			<H2><a title="home" href="../Cours/index.html">MENU</a></H2>
+			<UL>
+				<li> <a title="LE HTML" href="HTML.html">Le HTML 5</a> </li>
+				<li> <a title="Page Css" href="css.html">Le CSS 3</a> </li>
+				<li> <a title="JavaScript" href="js.html">JavaScript</a></li>
+				<li> <a title="GIT & GITHUB" href="GIT.html">GIT</a></li>
+				<li> <a title="liste de sites utiles" href="Bibliothèque.html">Librairie</a> </li>
+	
+			</UL>
+		</nav>
+
+
+
+		<section>
+			<article>
+			<h1> Résumé</h1>
+			<a href="#Sections">Les sections</a> <br />
+			<a href="#Balises">Balises Orphelines</a><br />
+			<a href="#Attributs">Les Attributs</a><br />
+			<a href="#ClassId">Classes et IDs</a><br />
+			<a href="#Tableaux">Les Tableaux en HTML </a><br />
+			<a href="#Formulaires">Les formulaires en HTML </a><br />
+			</article>
+
+			<article>
+				<h1>Le HTML 5</h1>
+
+				<h2 id="Sections">Les sections</h2>
+				<p>Avec le HTML 5 , la nouveauté se porte sur des noms de section( autant le savoir tout de suite !). Ce
+					sont des balises qui viennent structurer la page. Nous retrouvons les anciennes soit:
+					Header/body/footer ainsi que DIV et SPAN. mais nous avons également: NAV, MAIN, ARTICLE SECTION
+					ASIDE</p>
+				<p>Ces balises peuvent être imbriquées les unes dans les autres. Ainsi, une section peut avoir son
+					propre en-tête.</p>
+				<p>Ces balises ne s'occupent pas de la mise en page. Elles servent seulement à indiquer à l'ordinateur
+					le sens du texte qu'elles contiennent. On pourrait très bien placer l'en-tête en bas de la page si
+					on le souhaite.</p>
+				<p></p>
+			</article>
+			<article>
+				<h2 id="Balises">Les Balises</h2>
+
+				<p>Le HTML est un language informatique qui utilise des balises. C'est à dire des "<" et des ">"
+						contenant des lettres ou des mots. Par exemple '< a>' qui est la balise pour les liens. Voici
+						d'autres exemples: </p>
+						<ul>
+							<li><strong> Les Div</strong> sont des conteneurs de type bloc. Elles sont utilisée pour
+								strucutrer les pages HTML</li>
+							<Li> <strong> "h1,2,3,4,5,6"</strong>:(h pour header) Titres (1 étant le plus important et 6
+								le moins important</li>
+							<Li> <strong>"p"</strong>: paragraphes </li>
+							<Li> <strong>"Title"</strong>: permet de mettre un titre a l'onglet. (c'est aussi ce qui est
+								affiché sur les moteurs de recherche!) </li>
+							<Li> <strong>"en" </strong> permet de mettre en italique </li>
+							<Li> <strong>"strong"</strong> : permet de mettre en gras </li>
+							<Li> <strong>"mark" </strong> permet de souligner </li>
+							<Li> <strong>"UL"</strong> permet de commencer une liste à puce </li>
+							<Li> <strong>"OL"</strong> permet de commencer une liste ordonnée </li>
+							<Li> <strong>"LI"</strong> ligne de la liste pour ajouter des lignes à ul ou ol.</li>
+							<Li> <strong>"a href="nom d'une page/fichier>nom a afficher ""</strong> : permet de faire un
+								lien vers la page ou permet de télécharger un fichier. ce dernier doit etre dans le même
+								dossier pour que le téléchargement se lance. </li>
+						</ul>
+						<p>La plupart des balises vont par paire, comme celles vues précédement. En revanche, il en
+							existe également qui qui n'ont pas besoin d'être "fermée". Elles portent plusieurs noms
+							comme par exemple "balises orphelines" ou "balise autofermantes". En voici quelques unes:
+						</p>
+
+						<ul>
+							<li> <strong> "br"</strong> retour à la ligne</li>
+							<li> <strong> "hr/"</strong> faire un trait</li>
+
+							<li><strong>"img"</strong> permet d'inserer une image. Doit etre placé dans un paragraphe
+							</li>
+							<li><strong> "video"</strong>permet d'insérer une video</li>
+						</ul>
+						<a title="lien externe vers wikipedia"
+					href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1608357-memento-des-balises-html">Liste
+					des balises HTML</a>
+			</article>
+
+			<article>
+				<h2 id="Attributs">Les Attributs. </h2>
+				<p>Les attributs sont commes des adjectifs aux balises. Ils viennent ajouter une information
+					supplémentaire aux balises.
+
+					L'attribut se place dans la balise ouvrante, ex:</p>.
+				<p> Ouverture de balise("<") + nom de la balise + espace + Attribut="complément de l'attribut"
+						+fermeture (">") + affichage + fermeture de la balise ("< /X>")</p>
+				<p>Voici quelques exemples d'attribut.</p>
+				<ul>
+					<li> title="" : permet d'ajouter un texte lorsque le curseur survole le lien </li>
+					<li> src="" : permet de selectionner une image </li>
+					<li> alt="" : permet de décrire une image lors nottement de son insértion</li>
+					<li> id="": permet de "marquer" un endroit afin de permetre un ancrage </li>
+					<li> target="_blank" : permet d'ouvrir un lien dans une nouvelle fenêtre. </li>
+				</ul>
+			</article>
+
+			<!-- <article>
+				<h1 id="Images01">Partie Image. </h1>
+				<p> Voici un screen dans ma bibiliothèque d'image inséré en img :<br />
+					<img src="image/3LDOA.png" alt="Screen de Guild Wars" /> <br /></p>
+				<p>Voici la même image mais avec figcaption </p>
+
+				<figure>
+					<img src="Image/3LDOA.png" alt="Screen de Guild Wars" />
+					<figcaption> Cette image est issue du jeu vidéo Guild Wars.
+					</figcaption>
+				</figure>
+
+				<p> Si l'image n'apporte aucune information (c'est juste une illustration pour décorer) : placez l'image
+					dans un paragraphe.("< p>"). <br />
+
+						Si elle apporte une information : placez l'image dans une figure. ("< figure") </p>
+			</article> -->
+
+
+
+			<article>
+				<h2 id="ClassId">Les Classes et les Ids du HTML. </h2>
+				<p>Les classes et les Id permettent au developpeur de classer les balises.</p>
+				<p>Ce classement est très pratique pour nottament la mise en page avec le CSS. En effet, grâce
+					au CSS,
+					le developpeur peut définir le comportement qu'auront tout les éléments de cette catégorie.
+					Par
+					exemple aligner le texte, changer la couleur etc... </p>
+				<p>Les classes et les ID sont identique en tout point excepté le fait que l'ID ne peut etre
+					rattaché
+					qu'à un seul élément contrairement donc aux classes qui peuvent être rattachés à de
+					nombreuses
+					balises.</p>
+			</article>
+
+			<article>
+				<h2 id="Tableaux">Les Tableaux en HTML</h2>
+				<p>Avant l'arrivé de FLEXBOX, la pratique voulait que les sites internet soient construit avec
+					des
+					tableaux. Ceux ci permettaient de strucuter le site. Maintenant de nombreuses techniques
+					existent
+					afin de pouvoir construire un site internet sans passer par des tableaux. Voici comment
+					créer un
+					tableau: </p>
+				<p>La balise "table" vient délimiter le tableau.</p>
+				<p>La balise "Thead" vient délimiter la premiere ligne du tableau</p>
+				<p>La balise "tr" vient délimiter les lignes du tableau ( première incluse)</p>
+				<p>La balise "th" cible une cellule</p>
+				<p>La balise avec l' attribut "td rowspan="2" " permet la fusion d'une colonne sur deux lignes
+				</p>
+				<p>La balise avec l' attribut "td colspan="2" " permet la fusion d'une colonne sur deux colonnes
+				</p>
+
+				<p>Voila tout ce qu'il y a à savoir sur les tableaux.</p>
+
+
+			</article>
+			<article>
+				<h2 id="Formulaires">Les formulaires</h2>
+				<p>Le HTML permet au developpeur de créer des formulaires. Ceux ci sont devenus incontournables.
+					ex: les
+					retours clients</p>
+				<p>Les réponses sont stockés sur une autre pages et dans un autre language. Il faudra noter au début
+					d'un formulaire la direction que prendront les informations une fois ceux ci envoyées</p>
+				<p> Voici quelques notions à connaitre pour la construction d'un formulaire.</p>
+				<p> Avant de voir les balises des formulaires, il est également important de noter qu'une fois
+					complèter, il faut traiter l'information.</p>
+
+				<p> La balise "FORM": permet de délimiter un formulaire.</p>
+				<p>Il existe 2 attributs pour cette balise: "action" et "method" qui serviront pour le coté back en C#/
+					php</p>
+				<p>action = page qui va traiter le formulaire</p>
+				<p>method = il en existe deux types get ou post</p>
+				<ul>
+					<li>get = données dans l'url(limité à 250 caractères)</li>
+					<li>post= données dans la requete ( meilleur en terme de traitement de données)</li>
+				</ul>
+				<h4>Champ de renseignement libre</h4>
+
+				<p>Le balise "Label" sert à écrire à coté du champs du formulaire.</p>
+				<p>La balise autofermante "Imput type="txt" sert à pouvoir taper du texte dans le champs</p>
+
+				<p>Pour lier un label à un imput il faut ajouter un id sur l'imput et un attribut sur le
+					label. Les deux attributs doivent avoir la même valeur pour faire la liaison.</p>
+				<p>
+					<'.label for="imputFirstname" placehold text="Votre prenom">Votre prenom*:<' /label> <br />
+							<'input type="text" id="imputFirstname" name="firstname" required />"<br />
+				</p>
+				<p><label for="imputFirstname" placehold text="Votre prenom">Votre prenom:</label>
+
+					<input type="text" id="imputFirstname" name="firstname" required /></p>
+
+				<h4>Champ de renseignement long</h4>
+				<p>
+					Les balises rows et cols permettent de definir la taille de la zone d'écriture (rows= ligne,
+					cols=colonnes)
+				</p>
+				<p>
+					<'label for="textareaMessage">Votre message<' /label><br />
+							<'textarea id="textareaMessage" name="message" rows="4" cols="40"></'textarea>
+				</p>
+				<p><label for="textareaMessage">Votre message</label>
+					<textarea id="textareaMessage" name="message" rows="4" cols="40"></textarea></p>
+				<h4>Liste déroulante</h4>
+				<p>La balise " select" permet de délimiter la liste déroulante</p>
+				<p> La balise select prend le role de la balise "imput" </p>
+				<p> il faut ensuite choisir les choix du menu déroulant: </br>
+					la balise "option" permet de les definir. <br>
+					vous pouvez ajouter l'attribut "value="" " celui ci permet de definir les mots clé a taper pour y accèder plus rapidement (ex "FR" pour France) <br>
+				vous pouvez également ajouter " selected" pour definir la valeur par défaut </p>
+				<p>                <l'abel for="">Votre Pays:</'label>
+					<'select id="selectcountry" name="country"><br>
+						<'option value="BE">Belgique</'option><br>
+						<'option value="FR" selected>France</'option><br>
+						<'option value="ES">Espagne</'option><br>
+					</'select></p>
+				<p>                <label for="">Votre Pays:</label>
+					<select id="selectcountry" name="country">
+						<option value="BE">Belgique</option>
+						<option value="FR" selected>France</option><!-- attribut selected permet de préselectionné-->
+						<option value="ES">Espagne</option>
+					</select></p>
+
+					<h4>Listes à cocher</h4>
+
+				<p>Pour effectuer une liste à cocher, il suffit de remplacer l'attribut type  dans input avec la valeur "checkbox"</p>
+				<p>l'attribut "checked" permet de cocher une case par défaut.</p>
+				<p> <'input type="checkbox" id="checkboxRock" name="rock" /><br>
+					<'label for="checkboxRock">Rock</'label>
+					<'input type="checkbox" id="checkboxPop" name="pop" />
+					<'label for="checkboxPop">Pop</'label></p>
+				
+					<p> quels sont vos genres de musique préférés?</p>
+					<p><input type="checkbox" id="checkboxRock" name="rock" />
+						<label for="checkboxRock">Rock</label>
+						<input type="checkbox" id="checkboxRap" name="rap" checked />
+						<label for="checkboxRap">Rap</label>
+						<input type="checkbox" id="checkboxPop" name="pop" />
+						<label for="checkboxPop">Pop</label></p>
+					<h4>Bouton radio</h4>
+
+					<p>Idem que pour la checkbox, il suffit de changer en "radio"</p>
+					
+					<p>"Votre sexe:</p>
+					<p><'input type="radio" id="radiofemme" name="sexe" /><br>
+					<'label for="radiofemme">Féminin<'/label><br>
+					<'input type="radio" id="radioHomme" name="sexe" /><br>
+                	<'label for="radioHomme">Masculin</'label>"<br>
+					</p>
+					            <p>Votre sexe:</p>
+					<p><input type="radio" id="radiofemme" name="sexe" />
+					<label for="radiofemme">Féminin</label>
+					
+					<input type="radio" id="radioHomme" name="sexe" />
+					<label for="radioHomme">Masculin</label></p>
+
+					<h4>Bouton de soumission du formulaire</h4>
+					<p><"input type="submit" value="Valider" /></p>
+					<p><input type="submit" value="Valider" /></p>
+
+			</article>
+			<article>
+				<h1>En savoir plus...</h1>
+
+				<a title="lien externe vers wikipedia"
+					href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language">l'histoire du HTML</a> </br>
+			
+
+			</article>
+
+		</section>
+		<footer>
+			<h5>Contact ( work in progress )</h5>
+		</footer>
+
+	</body>
+
+	</HTML>

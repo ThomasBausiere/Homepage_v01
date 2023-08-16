@@ -1,0 +1,224 @@
+/*Police*/
+html{
+    /*16px est la valeur par défaut= 100%
+    16px>100%
+    10px->62,5%, c'est un produit en croix^^*/
+    font-size: 62.5%; /*ainsi, un REM = 10px au lieu de 16 px.*/
+}
+
+/* Appliquer les propriétées CSS sur tout les elements de la page */
+*{
+    box-sizing: border-box;
+  
+
+}
+
+
+
+
+body{
+     margin:0px;
+     background: url(../img/stars.jpg);
+     max-width:1100;
+     background-size: cover;
+     font-family: 'Courier Prime', monospace;
+     padding-top:90px;
+     /*Dés lors que l'on ajoute le header en positionement fixe. Le contenu du body est mangé par la superposition du header, on ajouter une marge intérieur pour corriger ce pb.*/
+    color:white;
+     font-size: 1.6rem;
+     /*On met ça pour éviter d'avoir tout les elements à 10px ( #html rem en haut de page)*/
+     
+}
+
+
+
+
+.logoh{ 
+     
+    margin: 0 auto; 
+    max-width:1100px;
+
+     
+    
+}
+
+header{
+   background:url(../img/stars.jpg);
+     /*Comment l'element doit se positionner*/
+     position: fixed;
+     top: 0;
+     left:0;
+     /*Par défaut, l'element fixé ne prends que l'espace dont il a besoin.*/
+     right:0;
+     
+}  
+
+header img{
+    width: 75px;
+}/* changer le comportement d'affichage d'un element= display. le inline: l'element se comporte en inline avec la possibilité de dimensionner l'élément.*/
+nav ul li{
+    display: inline-block;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 0px;
+    margin: 0, 10px;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid white;
+}
+nav{
+    float:right;
+}
+main {
+    background:url(../img/steel.jpg);
+    background-size: cover;
+    /*Modifier la largeur du conteneur. */
+    max-width:1100px;
+    /*Centrer un bloc*/
+    margin: 0 auto; 
+    background-color: rgba(0, 0, 0, 0.164);
+    padding:20px;
+   
+}
+
+
+/*Les sélecteurs d'éléments HTML*/
+p{
+    color:hsl(240, 100%, 50%);
+}
+
+
+/* Les selecteurs de classes
+Le point permet de cibler une classe
+L'element portant la classe peut etre precisée. exemple:
+p.welcome */
+
+.welcome{
+    color: rgb(255, 0, 0);
+    font-family: 'pt_sans_captionregular';
+}   
+
+/*Les sélecteurs d'id. 
+Le #permet de cibler un id*/
+
+#presentation {
+ 
+    background-size: cover;
+
+    /*Marges intérieures(padding pour intérieur, margin pour ext)*/
+padding: 100px 40px 100px 280px;
+/*Centrer le texte(par défaut aligné à gauche)*/
+text-align:center;
+/*Changer la taille de police (par défaut: 16px)*/
+font-size: 32px;
+/*Mettre le texte en gras.*/
+font-weight: bold;
+/*Positionnement du background (bouge l'image pas sa position sur la page). (possiblité de choisir l'axe x/y ex: background-position-x )*/
+background-position-y:1 20%;
+}
+
+
+.btn{
+    color: #f2d53f;
+    
+    /*Enlever le soulignement par défaut d'un lien*/
+    text-decoration: none;
+    font-size: 20px;
+    /*Ajouter une bordure.
+    border:taille style couleur*/
+    border: 2px solid  #f2d53f;
+    margin-top:auto;
+    /*Bord arrondis*/
+    border-radius: 10px;
+}
+
+/*Appliquer des styles uniquement au survol d'un element.*/
+
+.btn:hover{
+    background-color:  #f2d53f;
+    color:black;
+}
+.item{
+    margin:0px;
+    padding:10px;
+    width: 33%;
+    max-width: 150px;
+    min-width: 150px;
+    /*flotaison à gauche.*/
+    float: left;
+    margin:0 auto;
+    overflow: no;
+}
+
+figure img{
+    margin:0px, auto;
+    padding: 0px;
+    width: 100%;
+}
+figure
+figure img,video, iframe{
+    width:100%
+}
+/*permet de stop le float.*/
+.clearfix{
+    clear:both
+}
+
+/*Encart Services*/
+#service {
+    text-align: center;
+}
+
+#service h2{
+    color:red;
+    font-size: 40px;
+    /*Mettre en majuscule*/
+    text-transform:uppercase ;
+    /*Espacement des lettres*/
+    letter-spacing: 8px;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis:30%;
+}
+.col p {
+    color: white;
+    text-align:justify;
+    
+}/*modifier la barre*/
+.col hr{
+    width: 50%;
+    border: 6px solid red;
+
+
+}
+.col i{
+    /*Fontello est un générateur de police d'icones. nous pouvons donc utiliser les propriétées vues pour les polices*/
+    font-size: 30px;
+    color: white;
+}
+
+/*Permet de superposer la légend au conteneur de l'image*/
+ .item2{
+    /*Positionnement du parent pour que la légende se positionne à lui!*/
+    position: relative;
+}
+
+.item2 figcaption{ 
+    /*Comment doit se positionner l'élément.*/
+    position: absolute;
+    /*Où doit se positioner l'element*/
+    bottom:9px;
+    left:0;
+    background-color: red;
+    color:white;
+    padding: 15px;
+    
+}
+
