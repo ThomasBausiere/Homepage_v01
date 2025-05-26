@@ -1,14 +1,63 @@
-# Homepage_v01
-This projecrt is one of the first pages i developped. standing for a local homepage and where all my shortcuts were store
+# 🗂️ Homepage_v01 – Page d'accueil personnelle
 
-This page is decomposed as few parts but principaly 2 things were mix: personnal things and " pro " things. 
+## 🇫🇷 Présentation
 
-On a first hand, i stored all my shortcuts, for my favorits video games for exemple or the shortcuts to visits the pages I like as Facebook, google, netflix, G-mail etc.. This page saved me a lot of time over the year, since 2020. 
+Ce projet correspond à l'une de mes premières réalisations en développement web. Il s'agit d'une **page d'accueil locale** créée en 2020, utilisée quotidiennement pour centraliser mes **raccourcis personnels et professionnels**. 
 
-In the second Hand, i saved a lot of things that i called "pro-things", meaning, i wanted to became professional skills. I was curious and i've seen a lot of tech that i should have learn, as React, C#, .Net , UMl, Docker... To be sure i will not forget them, i've written them into a code line. 
+L’objectif était double : **gagner du temps** grâce à un accès rapide à mes liens favoris, et **garder en mémoire les technologies que je souhaitais explorer** dans mon parcours de développeur.
 
-Three years later, i'm still looking for learning a lot of them i recognize. 
+Cette page a connu plusieurs itérations au fil des années avant d’être figée dans son état actuel. Elle constitue aujourd’hui un **témoignage de mes débuts** et une **archive personnelle** représentative de ma progression.
 
-By the way, this page wasn't fixed like it is today. I've been working of it though the years and then left for an other project.
+---
 
-This page is a relic of my past
+## 🧩 Contenu
+
+- Raccourcis vers des plateformes personnelles (jeux vidéo, réseaux sociaux, services en ligne)
+- Bloc de veille technologique regroupant les outils et langages que je souhaitais apprendre
+- Organisation visuelle simple et fonctionnelle
+
+---
+
+## 🧰 Stack technique
+
+- HTML
+- CSS
+- JavaScript (vanilla)
+
+---
+
+## 🛠️ Lancement
+
+Ouvrir directement le fichier `index.html` dans un navigateur.
+
+---
+
+## 🇬🇧 Overview
+
+This project is one of my very first web development experiments. Created in 2020, it served as a **local homepage** for daily use, centralizing both **personal and professional shortcuts**.
+
+It was designed with two goals in mind: **save time** by accessing frequently visited links, and **track technologies** I aimed to learn during my journey as a developer.
+
+The page evolved over time before reaching its current state. Today, it stands as a **personal archive** and a **snapshot of my early progress** in web development.
+
+---
+
+## 🧩 Content
+
+- Shortcuts to personal services (video games, social networks, online platforms)
+- A dedicated section for listing technologies and tools I wanted to explore
+- Clean and functional visual structure
+
+---
+
+## 🧰 Tech Stack
+
+- HTML  
+- CSS  
+- JavaScript (vanilla)
+
+---
+
+## 🛠️ Launch
+
+Open the `index.html` file directly in your browser.
